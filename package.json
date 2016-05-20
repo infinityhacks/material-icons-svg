@@ -1,0 +1,34 @@
+{
+  "name": "material-icons-svg",
+  "version": "1.0.0",
+  "description": "Material Design icon helpers for Rails",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/miaopeng/material-icons-svg.git"
+  },
+  "keywords": [
+    "icons",
+    "material",
+    "material-design",
+    "svg"
+  ],
+  "author": "Peng Miao",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/miaopeng/material-icons-svg/issues"
+  },
+  "homepage": "https://github.com/miaopeng/material-icons-svg",
+  "devDependencies": {
+    "babel-core": "^6.9.0",
+    "babel-preset-es2015": "^6.9.0",
+    "gulp": "^3.9.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-replace": "^0.5.4",
+    "lodash": "^4.12.0",
+    "vinyl": "^1.1.1"
+  }
+}
