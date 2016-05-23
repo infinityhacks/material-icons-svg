@@ -9,13 +9,25 @@ class MaterialIconSvg
   end
 
   def reset
-    @icon, @size = [nil] * 2
+    @size = 24
+    @icon = [nil] * 1
     self
+  end
+
+  def sizes
+    {s: 18, m: 24, l: 36, xl: 48}
+  end
+
+  %w(s m l xl).each do |size|
+    define_method(size) do
+      @size = sizes[size.to_sym]
+      self
+    end
   end
 
   def to_s
     filename = "svg/ic_#{@icon}_24px.svg"
-    transform_params = {}
+    transform_params = {class: 'mdicon', size: "#{@size}px"}
     begin
       svg_file = if InlineSvg::IOResource === filename
         InlineSvg::IOResource.read filename

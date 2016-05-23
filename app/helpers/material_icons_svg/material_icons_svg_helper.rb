@@ -19,6 +19,6 @@ module MaterialIconsSvg
     end
 
     # Typeless alias method
-    alias_method :si, :material_icon_svg
+    alias_method :icon, :material_icon_svg
   end
 end
