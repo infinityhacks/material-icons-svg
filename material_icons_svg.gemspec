@@ -1,9 +1,10 @@
+require File.expand_path('../lib/material_icons_svg/version', __FILE__)
+
 Gem::Specification.new do |s|
   s.name        = 'material_icons_svg'
-  s.version     = '1.0.0'
-  s.date        = '2016-05-20'
-  s.summary     = "Hola!"
-  s.description = "Rails Helpers to render Material Design icons in SVG format"
+  s.version     = MaterialIconsSvg::VERSION
+  s.summary     = "Rails helpers for Google Material Design icons in SVG format"
+  s.description = "Rails Helpers for Google Material Design icons in SVG format"
   s.authors     = ["Peng Miao"]
   s.email       = 'mios426@gmail.com'
   s.files       = Dir['{app,lib}/**/*'] + %w(Rakefile LICENSE README.md)
